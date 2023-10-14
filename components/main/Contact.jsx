@@ -5,7 +5,7 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 const Contact = () => {
     return (
         <div id='contactUs' className='py-14 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
-            <section className="py-6 dark:bg-gray-800 dark:text-gray-50">
+            <section className="py-6  ">
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                     <div className="py-6 md:py-0 md:px-6">
                         <h1 className="text-4xl font-bold">Get in touch</h1>
@@ -41,15 +41,15 @@ const Contact = () => {
                     <form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
                         <label className="block">
                             <span className="mb-1">Full name</span>
-                            <input type="text" placeholder="Your Full Name" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-cg-blue dark:bg-gray-800 duration-300" />
+                            <input type="text" placeholder="Your Full Name" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-cg-blue  duration-300" />
                         </label>
                         <label className="block">
                             <span className="mb-1">Email address</span>
-                            <input type="email" placeholder="Email Address" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-cg-blue dark:bg-gray-800 duration-300" />
+                            <input type="email" placeholder="Email Address" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-cg-blue duration-300" />
                         </label>
                         <label className="block">
                             <span className="mb-1">Message</span>
-                            <textarea placeholder={`What's On Your Mind`} rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-cg-blue dark:bg-gray-800 duration-300"></textarea>
+                            <textarea placeholder={`What's On Your Mind`} rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-cg-blue duration-300"></textarea>
                         </label>
                         <button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-cg-red text-cg-white focus:ring-cg-red/80 hover:ring-cg-red/50 font-semibold w-full">Submit</button>
                     </form>
