@@ -58,9 +58,9 @@ const Services = () => {
                 </h2>
                 {
                     servicesArray.map((service, i) => (
-                        <div key={i} className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
+                        <div key={i} className="flex flex-col justify-center flex-1 p-6 ">
                             <h3 className="text-3xl font-bold text-cg-blue">{service.category}</h3>
-                            <p className="my-6 dark:text-gray-400 text-lg font-semibold">{service.description}</p>
+                            <p className="my-6  text-lg font-semibold">{service.description}</p>
                             <h3 className="text-2xl font-bold text-cg-black">Key Features</h3>
                             <ul>
                                 {

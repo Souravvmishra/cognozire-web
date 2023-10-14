@@ -61,8 +61,8 @@ const OurTeam = () => {
                                 <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                                     <span>{member.name}</span>
                                 </h3>
-                                <span className="text-gray-500 dark:text-gray-400">{member.position}</span>
-                                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">{member.description}</p>
+                                <span className="text-gray-800 ">{member.position}</span>
+                                <p className="mt-3 mb-4  text-gray-800 ">{member.description}</p>
                                 <ul className="flex space-x-4 sm:mt-0">
                                     <li>
                                         <a href={member.socialMedia.facebook} className="text-gray-500 hover:text-gray-900 dark:hover:text-white">

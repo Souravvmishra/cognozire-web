@@ -44,11 +44,9 @@ function Navbar() {
                 <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 "></div>
                 <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
                     <div className="flex items-center mb-8">
-                        <a className="mr-auto text-3xl font-bold leading-none" href="#">
-                            <svg className="h-12" alt="logo" viewBox="0 0 10240 10240">
-                                {/* SVG Path Here */}
-                            </svg>
-                        </a>
+                        <div className="mr-auto text-xl font-bold leading-none text-cg-black">
+                            <span className=''>COGNOZIRE</span>
+                        </div>
                         <button className="navbar-close" onClick={toggleMenu}>
                             <svg
                                 className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
@@ -73,7 +71,7 @@ function Navbar() {
                                 <Link className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/clients">
                                     Clients
                                 </Link>
-                                
+
                             </li>
                         </ul>
                     </div>

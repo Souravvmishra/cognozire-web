@@ -14,7 +14,7 @@ const HeroSection = () => {
 
                 <Navbar />
                 <div
-                    className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex  lg:items-center lg:px-8"
+                    className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:flex  lg:items-center lg:px-8"
                 >
                     <div className="max-w-xl  ">
                         <h1 className="text-3xl font-extrabold sm:text-5xl text-cg-white">
@@ -26,8 +26,8 @@ const HeroSection = () => {
                             </ul>
                         </h1>
 
-                        <p className="mt-4 max-w-lg sm:text-xl/relaxed text-cg-white">
-                            Cognozire is a consulting organization developing machine learning solutions for individuals and enterprises.In this generation of Internet, we realized that data is everything.
+                        <p className="mt-4  sm:text-xl/relaxed text-cg-white">
+                            Cognozire is a cutting-edge consultancy specializing in the creation and application of machine learning solutions for individuals and enterprises. In today's digital era, we understand the paramount importance of data. Therefore, we are dedicated to providing unparalleled support, leveraging your data to its fullest potential.
                         </p>
 
                         <div className="mt-8 flex flex-wrap gap-4 text-center">

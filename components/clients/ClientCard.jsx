@@ -37,24 +37,24 @@ const ClientCard = () => {
                 <h2 className='text-3xl  md:text-4xl xl:text-5xl font-bold pb-16 uppercase'>
                     Our Valued Partners
                 </h2>
-                <section className=" dark:bg-gray-800 dark:text-gray-100">
+                <section className="">
                     <div className="container mx-auto space-y-12">
                         {
                             clients.map((client, i) => (
                                 i % 2 === 0 ? (<div key = {i} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                                    <Image src={client.logo} alt="" className="h-80 dark:bg-gray-500 aspect-video object-contain" width={500} height={500} />
-                                    <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
+                                    <Image src={client.logo} alt="" className="h-80  aspect-video object-contain" width={500} height={500} />
+                                    <div className="flex flex-col justify-center flex-1 p-6 ">
                                         <h3 className="text-3xl font-bold">{client.name}</h3>
-                                        <p className="my-6 dark:text-gray-400">{client.desc}</p>
+                                        <p className="my-6 ">{client.desc}</p>
                                         <button type="button" className="self-start underline text-cg-blue">Know More</button>
                                     </div>
                                 </div>)
                                     :
                                     (<div key={i} className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-                                    <Image src={client.logo} alt="" className="h-80 dark:bg-gray-500 aspect-video object-contain" width={500} height={500} />
-                                        <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
+                                    <Image src={client.logo} alt="" className="h-80 aspect-video object-contain" width={500} height={500} />
+                                        <div className="flex flex-col justify-center flex-1 p-6 ">
                                             <h3 className="text-3xl font-bold">{client.name}</h3>
-                                            <p className="my-6 dark:text-gray-400">{client.desc}</p>
+                                            <p className="my-6 ">{client.desc}</p>
                                             <button type="button" className="self-start underline text-cg-blue">Know More</button>
                                         </div>
                                     </div>)
