@@ -1,7 +1,7 @@
 import Card from '@/components/main/card/Card'
 import Contact from '@/components/main/Contact'
 import FAQs from '@/components/main/FAQs'
-import { Footer } from '@/components/main/Footer'
+import Footer from '@/components/main/Footer'
 import HeroSection from '@/components/main/HeroSection'
 import OurClients from '@/components/main/OurClients'
 import OurTeam from '@/components/main/OurTeam'

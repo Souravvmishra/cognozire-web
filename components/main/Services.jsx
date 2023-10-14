@@ -5,6 +5,7 @@ import { MdHealthAndSafety, MdPermMedia, MdOutlineCastForEducation } from 'react
 import { BiMoneyWithdraw } from 'react-icons/bi'
 import { AiOutlineCustomerService } from 'react-icons/ai'
 import More from './buttons/More'
+import Link from 'next/link'
 
 
 const services = [
@@ -49,9 +50,9 @@ const Services = () => {
                         </div>
                     ))}
                 </div>
-                <div className=''>
+                <Link href={'/services'} className=''>
                     <More text={'Know More'} />
-                </div>
+                </Link>
             </div>
         </div>
     )

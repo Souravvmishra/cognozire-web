@@ -1,8 +1,6 @@
 import React from 'react'
 import Navbar from '../main/Navbar'
-import ListComponent from '../main/List'
 
-const list = ['Consultation', 'Advisory', 'Guidance']
 
 const HeroSection = () => {
     return (

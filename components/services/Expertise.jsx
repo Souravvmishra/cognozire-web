@@ -23,6 +23,7 @@ const expertises = [
 const Expertise = () => {
     return (
         <div>
+
             <h2 className='text-3xl  md:text-4xl xl:text-5xl font-bold pb-16 uppercase'>
                 OUR EXPERTISE
             </h2>

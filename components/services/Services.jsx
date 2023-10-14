@@ -65,7 +65,7 @@ const Services = () => {
                             <ul>
                                 {
                                     service.keyFeatures.map((point, i) => (
-                                        <li className='list-disc font-medium text-base list-inside' key={i}>
+                                        <li className='list-disc font-medium text-base list-inside hover:bg-slate-200  duration-300  cursor-pointer m-2 w-fit px-2 py-1 rounded-lg' key={i}>
                                             {point}
                                         </li>
                                     ))
