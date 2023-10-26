@@ -20,7 +20,7 @@ const Footer = () => {
                     </Link>
                     <div className="mt-6 ">
                         <p className="text-sm text-gray-800">
-                        Cognozire is a cutting-edge consultancy specializing in the creation and application of machine learning solutions for individuals and enterprises. In today's digital era, we understand the paramount importance of data. Therefore, we are dedicated to providing unparalleled support, leveraging your data to its fullest potential.
+                        At Cognozire, we are driven by a passion for reshaping the future through AI innovation, guiding both individuals and businesses on a transformative path toward unprecedented success and growth.
                         </p>
                     </div>
                 </div>

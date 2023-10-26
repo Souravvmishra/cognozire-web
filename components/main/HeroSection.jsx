@@ -27,7 +27,7 @@ const HeroSection = () => {
                         </h1>
 
                         <p className="mt-4  sm:text-xl/relaxed text-cg-white">
-                            Cognozire is a cutting-edge consultancy specializing in the creation and application of machine learning solutions for individuals and enterprises. In today's digital era, we understand the paramount importance of data. Therefore, we are dedicated to providing unparalleled support, leveraging your data to its fullest potential.
+                            Cognozire is a forward-thinking and inventive consulting and product development firm specializing in crafting cutting-edge artificial intelligence solutions tailored to meet the distinct requirements of individuals and businesses.
                         </p>
 
                         <div className="mt-8 flex flex-wrap gap-4 text-center">
