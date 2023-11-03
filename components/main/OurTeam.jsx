@@ -10,9 +10,9 @@ const members = [
         image: '/member01.png',
         description: "Passionate software engineer with expertise in web development and a love for open-source projects.",
         socialMedia: {
-            facebook: "https://www.facebook.com/johndoe",
-            twitter: "https://twitter.com/johndoe",
-            github: "https://github.com/johndoe",
+            facebook: "#",
+            twitter: "#",
+            github: "#",
         }
     },
     {
@@ -21,9 +21,9 @@ const members = [
         image: '/member02.png',
         description: "Data scientist with a focus on machine learning and data analytics, transforming data into actionable insights.",
         socialMedia: {
-            facebook: "https://www.facebook.com/alicesmith",
-            twitter: "https://twitter.com/alicesmith",
-            github: "https://github.com/alicesmith",
+            facebook: "#",
+            twitter: "#",
+            github: "#",
         }
     },
     {
@@ -32,9 +32,9 @@ const members = [
         image: '/member03.png',
         description: "Experienced product manager with a passion for delivering user-centric products that solve real-world problems.",
         socialMedia: {
-            facebook: "https://www.facebook.com/evajohnson",
-            twitter: "https://twitter.com/evajohnson",
-            github: "https://github.com/evajohnson",
+            facebook: "#",
+            twitter: "#",
+            github: "#",
         }
     }
 ];
