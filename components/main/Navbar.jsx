@@ -14,8 +14,8 @@ function Navbar() {
     return (
         <div>
             <nav className="relative px-4 py-4 flex justify-between items-center bg-transparent max-w-7xl mx-auto">
-                <Link className="glow text-xl md:text-3xl font-bold leading-none text-cg-white flex justify-center items-center" href="/">
-                    <Image className='' alt='Cognozire Logo' src={'/cognozireLogo.png'} width={100} height={100} />
+                <Link className=" text-xl md:text-3xl font-bold leading-none text-cg-white flex justify-center items-center" href="/">
+                    <Image className='bg-blend-overlay' alt='Cognozire Logo' src={'/cognozireLogo.png'} width={90} height={90} />
                     <span className=''>COGNOZIRE</span>
                 </Link>
                 <div className="lg:hidden">
@@ -24,17 +24,17 @@ function Navbar() {
                     </button>
                 </div>
                 <ul
-                    className={`hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-4 ${isMenuOpen ? '' : 'hidden'}`}
+                    className={`hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-1 ${isMenuOpen ? '' : 'hidden'}`}
                 >
-                    <li><Link className=" text-cg-white font-semibold text-base hover:text-gray-500 hover:bg-slate-200  duration-300  cursor-pointer w-fit px-3 py-1 rounded-lg" href="/">Home</Link></li>
+                    <li><Link className=" text-cg-white font-semibold text-base hover:text-gray-500 hover:bg-slate-200  duration-300  cursor-pointer w-fit py-2 px-6 rounded-lg" href="/">Home</Link></li>
 
-                    <li><Link className=" text-cg-white font-semibold text-base hover:text-gray-500 hover:bg-slate-200  duration-300  cursor-pointer w-fit px-3 py-1 rounded-lg" href="/services">Services</Link></li>
+                    <li><Link className=" text-cg-white font-semibold text-base hover:text-gray-500 hover:bg-slate-200  duration-300  cursor-pointer w-fit py-2 px-6 rounded-lg" href="/services">Services</Link></li>
 
-                    <li><Link className=" text-cg-white font-semibold text-base hover:text-gray-500 hover:bg-slate-200  duration-300  cursor-pointer w-fit px-3 py-1 rounded-lg" href="/clients">Clients</Link></li>
+                    <li><Link className=" text-cg-white font-semibold text-base hover:text-gray-500 hover:bg-slate-200  duration-300  cursor-pointer w-fit py-2 px-6 rounded-lg" href="/clients">Clients</Link></li>
 
                 </ul>
                 <a
-                    className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 ring hover:ring-slate-200 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+                    className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:ring border-2 hover:ring-slate-200 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
                     href="#contactUs"
                 >
                     Contact Us

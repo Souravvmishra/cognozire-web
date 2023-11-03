@@ -46,7 +46,7 @@ const ClientCard = () => {
                                     <div className="flex flex-col justify-center flex-1 p-6 ">
                                         <h3 className="text-3xl font-bold">{client.name}</h3>
                                         <p className="my-6 ">{client.desc}</p>
-                                        <button type="button" className="self-start underline text-cg-blue">Know More</button>
+                                        {/* <button type="button" className="self-start underline text-cg-blue">Know More</button> */}
                                     </div>
                                 </div>)
                                     :
@@ -55,7 +55,7 @@ const ClientCard = () => {
                                         <div className="flex flex-col justify-center flex-1 p-6 ">
                                             <h3 className="text-3xl font-bold">{client.name}</h3>
                                             <p className="my-6 ">{client.desc}</p>
-                                            <button type="button" className="self-start underline text-cg-blue">Know More</button>
+                                            {/* <button type="button" className="self-start underline text-cg-blue">Know More</button> */}
                                         </div>
                                     </div>)
                             ))

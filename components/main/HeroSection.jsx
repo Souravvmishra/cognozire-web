@@ -33,7 +33,7 @@ const HeroSection = () => {
                         <div className="mt-8 flex flex-wrap gap-4 text-center">
                             <a
                                 href="#contactUs"
-                                className="block w-full rounded-xl bg-cg-red px-12 py-3 text-sm text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto font-bold"
+                                className="block w-full rounded-xl bg-cg-red px-12 py-3 text-sm text-white shadow  focus:outline-none focus:ring duration-300 sm:w-auto font-bold hover:ring hover:ring-cg-red border-2"
                             >
                                 Let's Connect
                             </a>

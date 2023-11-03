@@ -31,7 +31,7 @@ const Contact = () => {
                                 <span>contact@cognozire.com</span>
                             </p>
                             <div className='py-4'>
-                                <Link  href={'https://api.whatsapp.com/send?phone=7709149202'} className=" button bg-cg-red border-4 border-cg-red/90 px-4 py-2 flex w-fit justify-center items-center space-x-3 rounded-lg text-cg-white hover:bg-red-800 scale-75 md:scale-90 lg:scale-100 ">
+                                <Link  href={'https://api.whatsapp.com/send?phone=7709149202'} className=" button bg-cg-red border-2 duration-300  px-4 py-2 flex w-fit justify-center items-center space-x-3 rounded-lg text-cg-white hover:ring hover:ring-cg-red scale-75 md:scale-90 lg:scale-100 ">
                                     <span className="text font-semibold">Connect On Whatsapp</span>
                                     <IoLogoWhatsapp size={25} />
                                 </Link>
@@ -51,7 +51,7 @@ const Contact = () => {
                             <span className="mb-1">Message</span>
                             <textarea placeholder={`What's On Your Mind`} rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-cg-blue duration-300"></textarea>
                         </label>
-                        <button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-cg-red text-cg-white focus:ring-cg-red/80 hover:ring-cg-red/50 font-semibold w-full">Submit</button>
+                        <button type="button" className="self-center px-8 py-3 text-lg  focus:ring focus:ring-opacity-75 bg-cg-red duration-300 rounded-lg text-cg-white border-2 hover:ring hover:ring-cg-red font-semibold w-full">Submit</button>
                     </form>
                 </div>
             </section>
