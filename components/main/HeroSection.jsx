@@ -37,7 +37,7 @@ const HeroSection = () => {
                     className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:flex  lg:items-center lg:px-8"
                 >
                     <div className="max-w-xl  ">
-                        <h1 className="text-3xl font-extrabold sm:text-5xl text-cg-white ">
+                        <h1 className="text-5xl font-extrabold md:text-6xl text-cg-white ">
                             <TypeAnimation
                                 sequence={list}
                                 speed={250}
