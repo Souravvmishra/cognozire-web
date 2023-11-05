@@ -7,13 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "push"  : "git push deploy master"
+    "push": "git push deploy master"
   },
   "dependencies": {
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.6",

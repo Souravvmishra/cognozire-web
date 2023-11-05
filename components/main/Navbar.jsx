@@ -15,7 +15,7 @@ function Navbar() {
         <div>
             <nav className="relative px-4 py-4 flex justify-between items-center bg-transparent max-w-7xl mx-auto">
                 <Link className=" text-xl md:text-3xl font-bold leading-none text-cg-white flex justify-center items-center" href="/">
-                    <Image className='bg-blend-overlay' alt='Cognozire Logo' src={'/cognozireLogo.png'} width={90} height={90} />
+                    <Image className='pr-2' alt='Cognozire Logo' src={'/cognozireLogo.png'} width={70} height={70} />
                     <span className=''>COGNOZIRE</span>
                 </Link>
                 <div className="lg:hidden">
@@ -26,15 +26,15 @@ function Navbar() {
                 <ul
                     className={`hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-1 ${isMenuOpen ? '' : 'hidden'}`}
                 >
-                    <li><Link className=" text-cg-white font-semibold text-base hover:text-gray-500 hover:bg-slate-200  duration-300  cursor-pointer w-fit py-2 px-6 rounded-lg" href="/">Home</Link></li>
+                    <li><Link className=" text-cg-white font-bold text-base hover:text-gray-800 hover:bg-slate-200  duration-300  cursor-pointer w-fit py-2 px-6 rounded-lg" href="/">Home</Link></li>
 
-                    <li><Link className=" text-cg-white font-semibold text-base hover:text-gray-500 hover:bg-slate-200  duration-300  cursor-pointer w-fit py-2 px-6 rounded-lg" href="/services">Services</Link></li>
+                    <li><Link className=" text-cg-white font-bold text-base hover:text-gray-800 hover:bg-slate-200  duration-300  cursor-pointer w-fit py-2 px-6 rounded-lg" href="/services">Services</Link></li>
 
-                    <li><Link className=" text-cg-white font-semibold text-base hover:text-gray-500 hover:bg-slate-200  duration-300  cursor-pointer w-fit py-2 px-6 rounded-lg" href="/clients">Clients</Link></li>
+                    <li><Link className=" text-cg-white font-bold text-base hover:text-gray-800 hover:bg-slate-200  duration-300  cursor-pointer w-fit py-2 px-6 rounded-lg" href="/clients">Clients</Link></li>
 
                 </ul>
                 <a
-                    className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:ring border-2 hover:ring-slate-200 text-sm text-gray-900 font-bold rounded-xl transition duration-200"
+                    className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:ring border-2 hover:ring-slate-200 border-cg-black text-gray-900 font-bold rounded-xl transition duration-200"
                     href="#contactUs"
                 >
                     Contact Us

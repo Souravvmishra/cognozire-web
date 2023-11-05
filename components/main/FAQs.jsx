@@ -46,7 +46,7 @@ const FAQs = () => {
                                     />
                                 </div>
                                 <div
-                                    className="invisible h-auto max-h-0 items-center opacity-0 transition-all   group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 font-medium"
+                                    className="invisible h-auto duration-300 max-h-0 items-center opacity-0 transition-all   group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 font-medium"
                                 >
                                     {faq.answer}
                                 </div>

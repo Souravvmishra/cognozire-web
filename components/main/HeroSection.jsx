@@ -1,10 +1,30 @@
-import React from 'react'
-import Navbar from './Navbar'
-import ListComponent from './List'
+'use client'
 
-const list = ['Consultation', 'Advisory', 'Guidance']
+import React, { useEffect, useState } from 'react'
+import Navbar from './Navbar'
+import { TypeAnimation } from 'react-type-animation';
+
+
+const list = ['Get End-to-End AI   Consultation', 'Get End-to-End AI   Advisory', 'Get End-to-End AI   Guidance']
 
 const HeroSection = () => {
+    const [loading, setLoading] = useState(true)
+
+
+    useEffect(() => {
+        setLoading(false)
+    }, [])
+
+    if (loading) {
+        return (
+            <div className='w-screen h-screen flex justify-center items-center fixed top-0 z-50 bg-cg-white text-cg-black'>
+                <div class="loader"></div>
+            </div>
+
+        )
+    }
+
+
     return (
         <div>
 
@@ -17,13 +37,12 @@ const HeroSection = () => {
                     className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:flex  lg:items-center lg:px-8"
                 >
                     <div className="max-w-xl  ">
-                        <h1 className="text-3xl font-extrabold sm:text-5xl text-cg-white">
-                            Get End-to-End AI
-
-                            <ul className="block font-extrabold text-cg-blue">
-                                <li>Consultation</li>
-                                {/* <ListComponent items={list} /> */}
-                            </ul>
+                        <h1 className="text-3xl font-extrabold sm:text-5xl text-cg-white ">
+                            <TypeAnimation
+                                sequence={list}
+                                speed={250}
+                                repeat={Infinity}
+                            />
                         </h1>
 
                         <p className="mt-4  sm:text-xl/relaxed text-cg-white">

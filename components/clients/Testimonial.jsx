@@ -3,37 +3,36 @@ import React from 'react';
 const testimonials = [
     {
         name: 'John Smith',
-        title: 'CEO, TechCorp',
-        comment:
-            "Cognozire's AI solutions have had a profound impact on our organization. Their team of experts guided us through the implementation process, and we've witnessed a remarkable increase in productivity and cost-efficiency.",
+        title: '2BSafe GmbH',
+        comment: "Cognozire has been an invaluable partner in helping us harness the power of AI for our business. Their innovative solutions have not only improved our efficiency but also transformed the way we approach data. We highly recommend their forward-thinking expertise.",
     },
     {
         name: 'Alice Johnson',
-        title: 'CTO, InnovateTech',
+        title: 'Exaum',
         comment:
-            `Cognozire has been a key partner in our digital transformation journey. Their AI products are cutting-edge and have revolutionized the way we operate. With their support, we've unlocked new opportunities and competitive edge.`,
+            `Working with Cognozire has been a game-changer for our organization. Their dedication to understanding our unique needs and crafting custom AI solutions has made a significant impact on our operations. We're excited about the possibilities that their inventive approach continues to unlock for us.`,
     },
     {
         name: 'Eleanor Adams',
-        title: 'COO, DataTech Solutions',
+        title: 'Turtle method',
         comment:
-            "Cognozire's AI consultancy services have been a game-changer for our business. Their dedicated team worked closely with us to harness the power of data and AI. As a result, we've optimized our operations, improved decision-making, and achieved significant growth.",
+            "Cognozire is a true pioneer in the field of AI. Their team's deep knowledge and creative thinking have allowed us to stay at the forefront of our industry. Their cutting-edge solutions have given us a competitive edge, and we couldn't be happier with the results.",
     },
     {
         name: 'Michael Lee',
-        title: 'CFO, FinanceWorld',
+        title: 'The Mindshift',
         comment:
-            "Cognozire's AI products have exceeded our expectations. They've streamlined our financial processes, enabling us to allocate resources more effectively. Their commitment to innovation and excellence is apparent in the quality of their solutions.",
+            "Cognozire's commitment to excellence and their ability to tailor AI solutions to our specific requirements have made a substantial difference in our business outcomes. Their innovative approach and dedication to problem-solving are truly commendable.",
     },
     {
         name: 'Sophia Rodriguez',
-        title: 'CMO, MarketWise',
+        title: 'Karjan Music Tech',
         comment:
             "Cognozire's AI tools have transformed the way we approach marketing. With their AI-driven insights, we've gained a deeper understanding of consumer behavior, resulting in more targeted and effective marketing strategies. Our campaigns have never been more successful.",
     },
     {
         name: 'David Williams',
-        title: 'CTO, HealthTech Solutions',
+        title: 'HealthTech Solutions',
         comment:
             "Cognozire's AI consultancy services have been indispensable in our mission to advance healthcare technology. Their deep expertise in both AI and the healthcare sector has been invaluable. With their support, we've developed groundbreaking solutions that improve patient care and outcomes.",
     },
@@ -59,8 +58,11 @@ const Testimonial = () => {
                                             <img src="https://i.pravatar.cc/100?img=1" alt="" />
                                         </div>
                                         <div className="flex-grow pl-3">
-                                            <h6 className="font-bold text-sm uppercase text-gray-600">
-                                                {testimonial.name}
+                                            <h6 className="font-bold text-sm uppercase text-gray-800">
+                                                {testimonial.name}  
+                                            </h6>
+                                            <h6 className="font-semibold text-xs uppercase text-gray-600">
+                                                {testimonial.title} 
                                             </h6>
                                         </div>
                                     </div>

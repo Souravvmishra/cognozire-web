@@ -13,14 +13,14 @@ const Footer = () => {
                         title="Company"
                         className="inline-flex items-center"
                     >
-                        <Image className='' alt='Cognozire Logo' src={'/cognozireLogo.png'} width={100} height={100} />
+                        <Image className='pr-2' alt='Cognozire Logo' src={'/cognozireLogo.png'} width={70} height={70} />
                         <span className="ml-1 text-2xl font-bold tracking-wide text-gray-800 uppercase">
                             COGNOZIRE
                         </span>
                     </Link>
                     <div className="mt-6 ">
                         <p className="text-sm text-gray-800">
-                        At Cognozire, we are driven by a passion for reshaping the future through AI innovation, guiding both individuals and businesses on a transformative path toward unprecedented success and growth.
+                            At Cognozire, we are driven by a passion for reshaping the future through AI innovation, guiding both individuals and businesses on a transformative path toward unprecedented success and growth.
                         </p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                             title="Our phone"
                             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
-                           +91 77091 49202
+                            +91 77091 49202
                         </Link>
                     </div>
                     <div className="flex">
@@ -60,7 +60,7 @@ const Footer = () => {
                             title="Our address"
                             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
-                            312 Lovely Street, NY
+                            Jammu & Kashmir
                         </a>
                     </div>
                 </div>
@@ -70,30 +70,25 @@ const Footer = () => {
                     </span>
                     <div className="flex items-center mt-1 space-x-3">
                         <a
-                            href="/"
+                            target='_blank'
+                            href="https://twitter.com/cognozire"
                             className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                         >
-                            <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
-                                <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 24 24">
+                                <path d="M20,6v12c0,1.1-0.9,2-2,2H6c-1.11,0-2-0.9-2-2V6c0-1.11,0.89-2,2-2h12C19.1,4,20,4.89,20,6z" opacity=".3"></path><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="0" stroke-width="1" d="M18,20	H6c-1.105,0-2-0.895-2-2V6c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2v12C20,19.105,19.105,20,18,20z"></path><path fill-rule="evenodd" d="M13.351,11.01L16.774,7h-1.311l-2.704,3.16L10.552,7h-3.85l3.941,5.633	L6.906,17h1.333l3.001-3.516L13.698,17h3.839L13.351,11.01z M8.566,7.988h1.487l5.631,8.024h-1.497L8.566,7.988z" clip-rule="evenodd"></path>
                             </svg>
                         </a>
+
+                        {/* Linkedin */}
                         <a
-                            href="/"
-                            className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                        >
-                            <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
-                                <circle cx="15" cy="15" r="4" />
-                                <path d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z" />
+                            target='_blank'
+                            href="https://www.linkedin.com/company/cognozire/"
+                            class="text-linkedin-blue transition-colors duration-300 hover:text-linkedin-blue-darker">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 24 24">
+                                <path d="M18,21H6c-1.657,0-3-1.343-3-3V6c0-1.657,1.343-3,3-3h12c1.657,0,3,1.343,3,3v12	C21,19.657,19.657,21,18,21z" opacity=".35"></path><path d="M9,17H6.477v-7H9V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2	S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826	h-2.523v-7h2.523v0.977C13.93,10.407,14.581,10,15.802,10S18,10.977,18,13.174V17z"></path>
                             </svg>
                         </a>
-                        <a
-                            href="/"
-                            className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                        >
-                            <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
-                                <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
-                            </svg>
-                        </a>
+
                     </div>
                 </div>
             </div>
@@ -101,32 +96,7 @@ const Footer = () => {
                 <p className="text-sm text-gray-600">
                     © Copyright 2023 Cognozire Inc. All rights reserved.
                 </p>
-                <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-                    <li>
-                        <a
-                            href="/"
-                            className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                        >
-                            F.A.Q
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/"
-                            className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                        >
-                            Privacy Policy
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/"
-                            className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                        >
-                            Terms &amp; Conditions
-                        </a>
-                    </li>
-                </ul>
+
             </div>
         </div>
     )
