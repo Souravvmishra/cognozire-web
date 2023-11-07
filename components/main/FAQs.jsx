@@ -6,7 +6,7 @@ import { BsFillCaretDownFill } from 'react-icons/bs'
 const faqs = [
     {
         "question": "What types of solutions does Cognozire offer?",
-        "answer": "Cognozire offers a wide range of machine learning and AI solutions tailored to the specific needs of our clients. This includes data analytics, predictive modeling, natural language processing, computer vision, and more."
+        "answer": "Cognozire offers a wide range of machine learning and AI solutions tailored to the specific needs of our clients. This includes data analytics, predictive modeling, natural language processing, neural networks, artificial intelligence and more."
     },
     {
         "question": "How can I get in touch with Cognozire for consultation?",
