@@ -41,14 +41,25 @@ const Footer = () => {
                     </div>
                     <div className="flex">
                         <p className="mr-1 text-gray-800">Email:</p>
-                        <Link
+                        <a
                             href="mailto:info@cognozire.com"
                             aria-label="Our email"
                             title="Our email"
                             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
-                            info@cognozire.com
-                        </Link>
+                            rhythm.bhatia@cognozire.in
+                        </a>
+                    </div>
+                    <div className="flex">
+                        <p className="mr-1 text-gray-800">Email:</p>
+                        <a
+                            href="mailto:info@cognozire.com"
+                            aria-label="Our email"
+                            title="Our email"
+                            className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                        >
+                            captdeepakdogra@cognozire.in
+                        </a>
                     </div>
                     <div className="flex">
                         <p className="mr-1 text-gray-800">Address:</p>
@@ -60,7 +71,7 @@ const Footer = () => {
                             title="Our address"
                             className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
-                            Jammu & Kashmir
+                            Pune, India
                         </a>
                     </div>
                 </div>

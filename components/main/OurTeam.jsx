@@ -41,10 +41,10 @@ const OurTeam = () => {
                     OUR TEAM
                 </h2>
 
-                <div className="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around ">
+                <div className="lg:flex md:flex sm:flex items-stretch xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around ">
 
                     {members.map((member, i) => (
-                        <div key={i} role="listitem" className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative xl:max-w-sm lg:w-2/5 mt-24 hover:scale-105 duration-300 group cursor-pointer">
+                        <div key={i} role="listitem" className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative xl:max-w-sm lg:w-2/5 mt-24 hover:scale-105 duration-300 group cursor-pointer ">
                             <div className="rounded overflow-hidden shadow-md bg-white py-6 border">
                                 <div className="absolute -mt-20 w-full flex justify-center ">
                                     <div className="h-32 w-32  overflow-hidden border border-black rounded-full shadow-xl">
