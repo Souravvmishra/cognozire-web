@@ -1,15 +1,74 @@
+'use client'
+
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+import { Toaster, toast } from 'react-hot-toast'
 import { IoLogoWhatsapp } from 'react-icons/io'
 
 const Contact = () => {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
+
+    function validateEmail(mail) {
+        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return regex.test(mail);
+    }
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        if (!name || !message || !email) {
+            toast.error("Enter All Values")
+            return
+        }
+
+        if (!validateEmail(email)) {
+            toast.error("Invalid Email Address")
+            return
+        }
+
+
+        try {
+            setIsLoading(true)
+            const response = await fetch('/api/sendEmail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({name, email, message}),
+            });
+
+            if (response.ok) {
+                toast.success('We Have Got Your Request!');
+            } else {
+                console.log(await response.json())
+                toast.error('Failed to submit form data.');
+            }
+        } catch (error) {
+            console.log(error);
+            toast.error('An error occurred while submitting form data:', error);
+        } finally {
+            setIsLoading(false)
+            setName('')
+            setEmail('')
+            setMessage('')
+        }
+    };
+
+
+
     return (
         <div id='contactUs' className='py-14 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8'>
+            <Toaster />
             <section className="py-6  ">
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                     <div className="py-6 md:py-0 md:px-6">
-                        <h1 className="text-4xl font-bold">Get in touch</h1>
-                        <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
+                        <h5 className="text-4xl font-bold">Get in touch</h5>
+                        <h6 className="pt-2 pb-4">Fill in the form to start a conversation</h6>
                         <div className="space-y-4">
                             <p className="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
@@ -45,20 +104,45 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+                    <form
+                        onSubmit={handleSubmit}
+                        className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
                         <label className="block">
                             <span className="mb-1">Full name</span>
-                            <input type="text" placeholder="Your Full Name" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-cg-blue  duration-300" />
+                            <input
+                                required
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                type="text"
+                                placeholder="Your Full Name"
+                                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-cg-blue  duration-300" />
                         </label>
                         <label className="block">
                             <span className="mb-1">Email address</span>
-                            <input type="email" placeholder="Email Address" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-cg-blue duration-300" />
+                            <input
+                                required
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                type="email"
+                                placeholder="Email Address"
+                                className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-cg-blue duration-300" />
                         </label>
                         <label className="block">
                             <span className="mb-1">Message</span>
-                            <textarea placeholder={`What's On Your Mind`} rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-cg-blue duration-300"></textarea>
+                            <textarea
+                                required
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                                placeholder={`What's On Your Mind`}
+                                rows="3"
+                                className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-cg-blue duration-300"></textarea>
                         </label>
-                        <button type="button" className="self-center px-8 py-3 text-lg  focus:ring focus:ring-opacity-75 bg-cg-red duration-300 rounded-lg text-cg-white border-2 hover:ring hover:ring-cg-red font-semibold w-full">Submit</button>
+                        <button
+                            disabled={isLoading}
+                            type="submit"
+                            className="self-center px-8 py-3 text-lg  focus:ring focus:ring-opacity-75 bg-cg-red duration-300 rounded-lg text-cg-white border-2 hover:ring hover:ring-cg-red font-semibold w-full disabled:opacity-50">
+                            Submit
+                        </button>
                     </form>
                 </div>
             </section>

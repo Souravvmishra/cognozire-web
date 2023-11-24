@@ -10,9 +10,13 @@
     "push": "git push deploy master"
   },
   "dependencies": {
+    "@react-email/components": "^0.0.11",
+    "@react-email/render": "^0.0.9",
     "next": "13.5.4",
+    "nodemailer": "^6.9.7",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
     "react-type-animation": "^3.2.0"
   },

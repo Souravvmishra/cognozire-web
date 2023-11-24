@@ -18,7 +18,7 @@ const HeroSection = () => {
     if (loading) {
         return (
             <div className='w-screen h-screen flex justify-center items-center fixed top-0 z-50 bg-cg-white text-cg-black'>
-                <div class="loader"></div>
+                <div className="loader"></div>
             </div>
 
         )
