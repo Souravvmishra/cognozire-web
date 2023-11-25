@@ -6,14 +6,14 @@ import nodemailer from 'nodemailer';
 
 
 const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com', // Gmail's SMTP server hostname
-    port: 587, // Gmail's recommended SMTP port
-    secure: false, // Set to true if you want to use SSL (deprecated) or false for TLS
+    host: 'smtp.hostinger.com', // Hostinger's SMTP server hostname
+    port: 587, // Hostinger's recommended SMTP port
+    secure: false, // Hostinger typically uses TLS, so set to true if necessary
     auth: {
-        user: process.env.EMAIL, // Your Gmail email address
-        pass: process.env.PASSWORD // Your Gmail app password 
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD // Your email password (consider using an app-specific password)
     },
-});
+  });
 
 
 export async function POST(request, res) {
@@ -45,20 +45,6 @@ export async function POST(request, res) {
 
     try {
         // await transporter.sendMail({ ...mailOptions, to: `rhythm.bhatia@cognozire.in, ${email}` });
-
-
-        await new Promise((resolve, reject) => {
-            // verify connection configuration
-            transporter.verify(function (error, success) {
-                if (error) {
-                    console.log(error);
-                    reject(error);
-                } else {
-                    console.log("Server is ready to take our messages");
-                    resolve(success);
-                }
-            });
-        });
 
         await new Promise((resolve, reject) => {
             // send mail
