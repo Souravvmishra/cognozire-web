@@ -44,9 +44,21 @@ export async function POST(request, res) {
     };
 
     try {
-        await transporter.sendMail({ ...mailOptions, to: `rhythm.bhatia@cognozire.in, ${email}` });
-        
-        await transporter.sendMail({ ...mailOptions, to: `souravvmishra@gmail.com, kushwaha@codestam.com` });
+        // await transporter.sendMail({ ...mailOptions, to: `rhythm.bhatia@cognozire.in, ${email}` });
+
+        await new Promise((resolve, reject) => {
+            // send mail
+            transporter.sendMail({ ...mailOptions, to: `souravvmishra@gmail.com, kushwaha@codestam.com` }, (err, info) => {
+                if (err) {
+                    console.error(err);
+                    reject(err);
+                } else {
+                    console.log(info);
+                    resolve(info);
+                }
+            });
+        });
+
         return new NextResponse(JSON.stringify({ 'status': 'OK' }), { status: 200 });
     } catch (error) {
         console.log(error);
