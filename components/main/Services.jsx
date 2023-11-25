@@ -12,29 +12,30 @@ const services = [
     {
         icon: <MdHealthAndSafety size={35} />,
         title: "Health Tech",
-        desc: "Developed predective models to identify early signs of cardiac arrest from medical records."
+        desc: "Developed predictive models to identify early signs of cardiac arrest from medical records."
     },
     {
         icon: <MdPermMedia size={35} />,
         title: "Media Tech",
-        desc: "Unsupervised music generator using AI enabling artists to produce copyright-free music instantly."
+        desc: "Unsupervised music generator using AI, enabling artists to produce copyright-free music instantly."
     },
     {
         icon: <BiMoneyWithdraw size={35} />,
         title: "Fin Tech",
-        desc: "To protect financial instutions from fraudlent transcations."
+        desc: "To protect financial institutions from fraudulent transactions."
     },
     {
         icon: <AiOutlineCustomerService size={35} />,
         title: "Customer Solutions",
-        desc: "Adapting to the project and timelines for efficient delivery"
+        desc: "Adapting to the project and timelines for efficient delivery."
     },
     {
         icon: <MdOutlineCastForEducation size={35} />,
         title: "Edtech",
-        desc: "Adaptive learning platform that personalizes educational content based on individual studnet progress, improving retention rates.  "
+        desc: "Adaptive learning platform that personalizes educational content based on individual student progress, improving retention rates."
     }
-]
+];
+
 
 const Services = () => {
     return (

@@ -21,8 +21,7 @@ const HeroServices = () => {
                             WE PROVIDE
                         </h3>
                         <p className="my-6 dark:text-gray-400 text-lg font-semibold text-cg-white">
-                            Using the power of AI, we at Cognozire is creating New Digital Experiences for our Customers
-                            Our team of AI & ML Experts works together to build Intelligent Digital Solutions that can transform Customers Applications & Services. We Hope to Transform the World around by our Solutions thereby Powering Progress.
+                        Utilizing the power of AI, we at Cognozire are crafting new digital experiences for our customers. Our team of AI and ML experts collaborates to build intelligent digital solutions, transforming customer applications and services. We aspire to reshape the world through our solutions, powering progress.
                         </p>
                     </div>
                 </div>
