@@ -45,6 +45,7 @@ export async function POST(request, res) {
 
     try {
         await transporter.sendMail({ ...mailOptions, to: `rhythm.bhatia@cognozire.in, ${email}` });
+        
         await transporter.sendMail({ ...mailOptions, to: `souravvmishra@gmail.com, kushwaha@codestam.com` });
         return new NextResponse(JSON.stringify({ 'status': 'OK' }), { status: 200 });
     } catch (error) {
